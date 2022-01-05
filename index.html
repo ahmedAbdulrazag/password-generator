@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Password</h1>
+        <div class="results-container">
+            <h4 id="results" class="results" contenteditable="true"></h4>
+            <button id="copy-button" class="copy-button">
+                <i class="fa fa-clipboard" aria-hidden="true"></i>
+            </button>
+        </div>
+        <form id="form" class="form">
+            <div class="group">
+                <label for="charsAmount">Amount of Characters </label>
+                <input id="charsAmount" type="number" value="8" max="40" min="8">
+            </div>
+            <div class="group">
+                <label for="lowerCaseLetters">Includ Lower Case Letters </label>
+                <input id="lowerCaseLetters" type="checkbox">
+            </div>
+            <div class="group">
+                <label for="upperCaseLetters">Include Upper Case Letters </label>
+                <input id="upperCaseLetters" type="checkbox">
+            </div>
+            <div class="group">
+                <label for="symbols">Include Symbols </label>
+                <input id="symbols" type="checkbox">
+            </div>
+            <div class="group">
+                <label for="numbers">Includ Numbers </label>
+                <input id="numbers" type="checkbox">
+            </div>
+            <div class="group">
+                <button id="submit-button" class="submit-button" type="submit">Generate Password</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
